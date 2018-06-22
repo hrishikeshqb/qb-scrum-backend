@@ -1,0 +1,90 @@
+// .eslintrc
+
+{
+  "env": {
+    "browser": true
+  },
+
+  "parser": "babel-eslint",
+
+    "rules": {
+    "indent": [
+      "error",
+      2, {
+        "FunctionDeclaration": {"body": 1, "parameters": 2},
+        "FunctionExpression": {"body": 1, "parameters": 2},
+        "CallExpression": {"arguments": 1},
+        "MemberExpression": 1,
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {"avoidEscape": true}
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "space-before-function-paren": [
+      "error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "no-var": [
+      "error"
+    ],
+    "prefer-const": [
+      "error"
+    ],
+    "no-multiple-empty-lines": [
+      "error"
+    ],
+    "max-len": [
+      "error",
+      125
+    ],
+    "comma-spacing": [
+      "error",
+      {"before": false, "after": true}
+    ],
+    "comma-dangle": [
+      "error", {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+      }
+    ],
+    "no-console": [
+      "error",
+      {"allow": ["warn", "error"]}
+    ],
+    "curly": [
+      "error"
+    ],
+    "no-unused-vars": [
+      "error",
+      {"argsIgnorePattern": "^__"}
+    ],
+    "keyword-spacing": [
+      "error",
+      {"before": true, "after": true}
+    ],
+    "space-before-blocks": [
+      "error"
+    ]
+  }
+}

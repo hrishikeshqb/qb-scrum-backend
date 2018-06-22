@@ -1,5 +1,5 @@
 const endpoints ={
-projects: '/projects',
+  projects: '/projects',
 };
 
 module.exports = endpoints;

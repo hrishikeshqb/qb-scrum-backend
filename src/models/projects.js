@@ -1,6 +1,6 @@
-let mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-let projectSchema = new mongoose.Schema({
+const projectSchema = new mongoose.Schema({
   name: String,
   description: String,
   memebers: [{

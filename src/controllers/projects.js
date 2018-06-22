@@ -7,11 +7,11 @@ const { sendSuccessResponse, sendFailureResponse } = require('../helpers/respons
  */
 const  getUsersProjects = (req, res) => {
   const { userId } = req.query;
-  ProjectSchema.find({"members.id": userId})
+  ProjectSchema.find({'members.id': userId})
     .then(projects => {
       sendSuccessResponse(res, projects);
     })
-    .catch(error => sendFailureResponse(res, error))
+    .catch(error => sendFailureResponse(res, error));
 };
 
 module.exports = getUsersProjects;
